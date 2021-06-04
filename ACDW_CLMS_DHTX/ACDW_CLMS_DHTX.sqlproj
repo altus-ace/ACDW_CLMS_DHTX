@@ -14,7 +14,7 @@
     </RootPath>
     <RootNamespace>ACDW_CLMS_DHTX</RootNamespace>
     <AssemblyName>ACDW_CLMS_DHTX</AssemblyName>
-    <ModelCollation>1033, CI</ModelCollation>
+    <ModelCollation>1033,CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -23,6 +23,8 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,5 +59,147 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="lst\" />
+    <Folder Include="lst\Tables\" />
+    <Folder Include="adi\" />
+    <Folder Include="adi\Tables\" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="adi\Functions\" />
+    <Folder Include="lst\Functions\" />
+    <Folder Include="adi\Stored Procedures\" />
+    <Folder Include="adw\" />
+    <Folder Include="adw\Stored Procedures\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="ast\" />
+    <Folder Include="ast\Stored Procedures\" />
+    <Folder Include="amd\" />
+    <Folder Include="amd\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="lst\Tables\List_ICD10PCScwCCSCategory.sql" />
+    <Build Include="adi\Tables\DHTX_StarsAdherenceQualityReports.sql" />
+    <Build Include="lst\Tables\LIST_QM_Mapping.sql" />
+    <Build Include="lst\Tables\LIST_PROV_SPECIALTY_CODES.sql" />
+    <Build Include="lst\Tables\List_CCN.sql" />
+    <Build Include="lst\Tables\List_PCP.sql" />
+    <Build Include="adi\Tables\DHTX_MembershipEnrollment.sql" />
+    <Build Include="lst\Tables\lstMapCareoppsPrograms.sql" />
+    <Build Include="lst\Tables\lstPlanMapping.sql" />
+    <Build Include="lst\Tables\LIST_HEDIS_MEASURE.sql" />
+    <Build Include="lst\Tables\lstCareOpToPlan.sql" />
+    <Build Include="lst\Tables\list_client.sql" />
+    <Build Include="lst\Tables\List_CCSR.sql" />
+    <Build Include="lst\Tables\LIST_HEDIS_CODE.sql" />
+    <Build Include="lst\Tables\List_DRUG_PRODUCT.sql" />
+    <Build Include="lst\Tables\lstScoringSystem.sql" />
+    <Build Include="adi\Tables\DHTX_Capitation.sql" />
+    <Build Include="lst\Tables\lstChronicConditionIndicator.sql" />
+    <Build Include="lst\Tables\lstNdcDrugPackage.sql" />
+    <Build Include="adi\Tables\DHTX_Census.sql" />
+    <Build Include="adi\Tables\DHTX_PCPVIsit.sql" />
+    <Build Include="adi\Tables\DHTX_PartCClaims.sql" />
+    <Build Include="adi\Tables\DHTX_EligibilityMonthly.sql" />
+    <Build Include="lst\Tables\lstNdcDrugProduct.sql" />
+    <Build Include="adi\Tables\DHTX_RiskAdjustment.sql" />
+    <Build Include="adi\Tables\DHTX_QualityReports.sql" />
+    <Build Include="adi\Tables\DHTX_Eligibility.sql" />
+    <Build Include="lst\Tables\lstPhoneType.sql" />
+    <Build Include="lst\Tables\LIST_NPPES_NPI.sql" />
+    <Build Include="adi\Tables\DHTX_QualitySupplementalData.sql" />
+    <Build Include="lst\Tables\LIST_Disch_Disposition.sql" />
+    <Build Include="lst\Tables\LIST_AHRTIPS.sql" />
+    <Build Include="adi\Tables\DHTX_HospitalCensus.sql" />
+    <Build Include="adi\Tables\DHTX_PharmacyClaims.sql" />
+    <Build Include="lst\Tables\lstPhoneCarrierType.sql" />
+    <Build Include="lst\Tables\lstEmailType.sql" />
+    <Build Include="lst\Tables\ListAceMapping.sql" />
+    <Build Include="adi\Tables\DHTX_StarsActionableGapReport.sql" />
+    <Build Include="lst\Tables\LIST_DRUG_PACKAGE.sql" />
+    <Build Include="lst\Tables\lstAddressType.sql" />
+    <Build Include="lst\Tables\LIST_HCC_CODES.sql" />
+    <Build Include="adi\Tables\DHTX_StarsTRCReport.sql" />
+    <Build Include="lst\Tables\List_UBREV.sql" />
+    <Build Include="adi\Tables\DHTX_MedAdherencePlans.sql" />
+    <Build Include="lst\Tables\lstPreferredFacility.sql" />
+    <Build Include="adi\Tables\DHTX_StarsMeasureStatus.sql" />
+    <Build Include="lst\Tables\LIST_ICD10CM.sql" />
+    <Build Include="adi\Tables\DHTX_EnrollmentChanges.sql" />
+    <Build Include="lst\Tables\LIST_ICDcwHCC.sql" />
+    <Build Include="adi\Tables\DHTX_StarsMemberStatus.sql" />
+    <Build Include="lst\Tables\LIST_ICDCCS.sql" />
+    <Build Include="lst\Tables\LIST_Place_of_SVC.sql" />
+    <Build Include="lst\Tables\List_CPT.sql" />
+    <Build Include="adi\Tables\DHTX_MedicalClaims.sql" />
+    <Build Include="lst\Tables\LIST_HCPCS.sql" />
+    <Build Include="dbo\Views\vw_Validation_ADI2ADW_MbrCounts.sql" />
+    <Build Include="Security\ITS-DB-BA.sql" />
+    <Build Include="Security\ace_admin.sql" />
+    <Build Include="Security\ace_admin_1.sql" />
+    <Build Include="Security\altus_sa.sql" />
+    <Build Include="Security\altus_sa_1.sql" />
+    <Build Include="Security\ALTUSACE_ITS-EXCLUDE-DB.sql" />
+    <Build Include="Security\ALTUSACE_ITS-EXCLUDE-DB_1.sql" />
+    <Build Include="Security\BoomiDbUser.sql" />
+    <Build Include="Security\BoomiDbUser_1.sql" />
+    <Build Include="Security\ALTUSACE_Rpt_Admin.sql" />
+    <Build Include="Security\ALTUSACE_Rpt_Admin_1.sql" />
+    <Build Include="Security\ALTUSACE_ITS-DB-BA.sql" />
+    <Build Include="Security\ALTUSACE_ITS-DB-BA_1.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="adi\Functions\udf_ConvertToCamelCase.sql" />
+    <Build Include="lst\Functions\fnStripNonNumericChar.sql" />
+    <Build Include="lst\Functions\PhoneFormat.sql" />
+    <Build Include="adi\Stored Procedures\LoadFileExist.sql" />
+    <Build Include="adw\Stored Procedures\pdwCOP_Devoted.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_MedicalClaims.sql" />
+    <Build Include="dbo\Stored Procedures\usp_QM_Error_handler.sql" />
+    <Build Include="adi\Stored Procedures\ImportStarsAdherenceReport.sql" />
+    <Build Include="adw\Stored Procedures\Load_Pdw_MasterLoad_CopDevoted.sql" />
+    <Build Include="adi\Stored Procedures\ImportMembershipEnrollment.sql" />
+    <Build Include="adi\Stored Procedures\ValidateMembership.sql" />
+    <Build Include="adw\Stored Procedures\pdwMbr_31_Load_MemberMonth_Consolidation.sql" />
+    <Build Include="adi\Stored Procedures\ImportPCPVisit.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_EligibilityMonthly.sql" />
+    <Build Include="adi\Stored Procedures\ImportCapitation.sql" />
+    <Build Include="adi\Stored Procedures\ImportCensus.sql" />
+    <Build Include="adi\Stored Procedures\ImportPartCClaims.sql" />
+    <Build Include="adi\Stored Procedures\ImportQualityReports.sql" />
+    <Build Include="ast\Stored Procedures\Pud_UpdateAllLineageKeys.sql" />
+    <Build Include="adi\Stored Procedures\ImportQualitySupplementalData.sql" />
+    <Build Include="adi\Stored Procedures\ImportRiskAdjustment.sql" />
+    <Build Include="ast\Stored Procedures\plsDevCareoppsStarsMemberStatus.sql" />
+    <Build Include="ast\Stored Procedures\pts_03_DevotedMbrMembershipAdiTableUpdate.sql" />
+    <Build Include="adw\Stored Procedures\pus_10_UpdateStgRowStatus.sql" />
+    <Build Include="ast\Stored Procedures\pls_02_DevotedMbrMembershipRunMPI.sql" />
+    <Build Include="ast\Stored Procedures\pls_01_DevotedMbrMembership.sql" />
+    <Build Include="adi\Stored Procedures\ImportDevotedHospitalCensus.sql" />
+    <Build Include="adw\Stored Procedures\Load_MasterJob_DevotedMembership.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_StarsActionableGapReport.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_StarsMemberStatus.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_StarsTRCReport.sql" />
+    <Build Include="adi\Stored Procedures\ValidateCop.sql" />
+    <Build Include="adw\Stored Procedures\Pdw_MbrDimension.sql" />
+    <Build Include="amd\Stored Procedures\sp_AceEtlAudit_Open.sql" />
+    <Build Include="amd\Stored Procedures\sp_AceEtlAudit_Close.sql" />
+    <Build Include="adi\Stored Procedures\ImportMedAdherencePlans.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_StarsMeasureStatus.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_PharmacyClaims.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_PartCClaims.sql" />
+    <Build Include="adw\Stored Procedures\usp_MPI_Error_handler.sql" />
+    <Build Include="ast\Stored Procedures\z_stg_01_DevotedMbrMemberLoad.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_EnrollmentChanges.sql" />
+    <Build Include="ast\Stored Procedures\pls_CignaMACareOpps_Adhoc.sql" />
+    <Build Include="ast\Stored Procedures\plsDevCareoppsStarsAdherenceQualityReports.sql" />
+    <Build Include="ast\Stored Procedures\plsDevCareoppsPcpVisit.sql" />
+    <Build Include="adi\Stored Procedures\ImportDHTX_StarsAdherenceReport.sql" />
+    <Build Include="Security\adi.sql" />
+    <Build Include="Security\adw.sql" />
+    <Build Include="Security\ALTUSACE_ITS-DB-BA_2.sql" />
+    <Build Include="Security\ALTUSACE_Rpt_Admin_2.sql" />
+    <Build Include="Security\amd.sql" />
+    <Build Include="Security\ast.sql" />
+    <Build Include="Security\lst.sql" />
   </ItemGroup>
 </Project>
