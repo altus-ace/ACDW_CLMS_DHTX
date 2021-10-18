@@ -1,0 +1,77 @@
+10/18/2021 6:46:15 AM	This log contains information about the import schema operation into project 'DHTX' on computer 'ACE-ITS-DT09' by user 'bakhile'.
+10/18/2021 6:46:15 AM	Import of database schema has started.
+10/18/2021 6:46:26 AM	Gathering database options
+10/18/2021 6:46:26 AM	Gathering users
+10/18/2021 6:46:26 AM	Gathering roles
+10/18/2021 6:46:26 AM	Gathering application roles
+10/18/2021 6:46:26 AM	Gathering role memberships
+10/18/2021 6:46:26 AM	Gathering filegroups
+10/18/2021 6:46:26 AM	Gathering full-text catalogs
+10/18/2021 6:46:26 AM	Gathering assemblies
+10/18/2021 6:46:26 AM	Gathering certificates
+10/18/2021 6:46:26 AM	Gathering asymmetric keys
+10/18/2021 6:46:26 AM	Gathering symmetric keys
+10/18/2021 6:46:26 AM	Gathering encrypted symmetric keys
+10/18/2021 6:46:26 AM	Gathering schemas
+10/18/2021 6:46:26 AM	Gathering XML schema collections
+10/18/2021 6:46:26 AM	Gathering user-defined data types
+10/18/2021 6:46:26 AM	Gathering user-defined types
+10/18/2021 6:46:26 AM	Gathering table types
+10/18/2021 6:46:26 AM	Gathering unique keys for table types
+10/18/2021 6:46:26 AM	Gathering primary keys for table types
+10/18/2021 6:46:26 AM	Gathering indexes for table types
+10/18/2021 6:46:26 AM	Gathering check constraints for table types
+10/18/2021 6:46:26 AM	Gathering default constraints for table types
+10/18/2021 6:46:26 AM	Gathering partition functions
+10/18/2021 6:46:26 AM	Gathering partition schemes
+10/18/2021 6:46:26 AM	Gathering functions
+10/18/2021 6:46:26 AM	Gathering encrypted functions
+10/18/2021 6:46:26 AM	Gathering aggregates
+10/18/2021 6:46:26 AM	Gathering procedures
+10/18/2021 6:46:27 AM	Gathering encrypted procedures
+10/18/2021 6:46:27 AM	Gathering tables
+10/18/2021 6:46:27 AM	Gathering primary keys
+10/18/2021 6:46:27 AM	Gathering unique constraints
+10/18/2021 6:46:27 AM	Gathering foreign keys
+10/18/2021 6:46:27 AM	Gathering default constraints
+10/18/2021 6:46:28 AM	Gathering check constraints
+10/18/2021 6:46:28 AM	Gathering views
+10/18/2021 6:46:28 AM	Gathering encrypted views
+10/18/2021 6:46:28 AM	Gathering indexes
+10/18/2021 6:46:28 AM	Gathering statistics
+10/18/2021 6:46:28 AM	Gathering full-text index stoplists
+10/18/2021 6:46:28 AM	Gathering search property lists
+10/18/2021 6:46:28 AM	Gathering search properties
+10/18/2021 6:46:28 AM	Gathering full-text indexes
+10/18/2021 6:46:28 AM	Gathering column store indexes
+10/18/2021 6:46:28 AM	Gathering spatial indexes
+10/18/2021 6:46:28 AM	Gathering XML indexes
+10/18/2021 6:46:28 AM	Gathering Selective XML indexes
+10/18/2021 6:46:28 AM	Gathering encrypted triggers
+10/18/2021 6:46:28 AM	Gathering triggers
+10/18/2021 6:46:28 AM	Gathering encrypted and clr ddl triggers
+10/18/2021 6:46:28 AM	Gathering ddl triggers
+10/18/2021 6:46:28 AM	Gathering synonyms
+10/18/2021 6:46:28 AM	Gathering defaults
+10/18/2021 6:46:28 AM	Gathering data constraint uddt bindings
+10/18/2021 6:46:28 AM	Gathering rules
+10/18/2021 6:46:28 AM	Gathering data constraint uddt bindings
+10/18/2021 6:46:28 AM	Gathering message types
+10/18/2021 6:46:28 AM	Gathering queues
+10/18/2021 6:46:28 AM	Gathering contracts
+10/18/2021 6:46:28 AM	Gathering services
+10/18/2021 6:46:28 AM	Gathering event notifications
+10/18/2021 6:46:28 AM	Gathering remote service bindings
+10/18/2021 6:46:28 AM	Gathering broker priorities
+10/18/2021 6:46:28 AM	Gathering signatures
+10/18/2021 6:46:28 AM	Gathering data compression options
+10/18/2021 6:46:28 AM	Gathering sequence types
+10/18/2021 6:46:28 AM	Gathering extended properties
+10/18/2021 6:46:29 AM	Gathering credentials
+10/18/2021 6:46:29 AM	Gathering logins
+10/18/2021 6:46:29 AM	Gathering server audits
+10/18/2021 6:46:30 AM	Scanning project for duplicate elements
+10/18/2021 6:46:30 AM	Finished duplicate element processing
+10/18/2021 6:46:31 AM	Finished importing database.
+10/18/2021 6:46:31 AM	A summary of the import was saved to the following location: C:\Users\bakhile\source\repos\DHTX\DHTX\Import Schema Logs\DHTX_20211018114615.log
+10/18/2021 6:46:31 AM	Click Finish to continue...
